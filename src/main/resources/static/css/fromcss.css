@@ -1,0 +1,73 @@
+.froms {
+  display: flex;
+  margin-left: 200px;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+}
+.datapic {
+  width: 20%;
+  height: 200px;
+  background-color: white;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.datapic2 {
+  width: 45%;
+  height: auto;
+  background-color: white;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.datapic3 {
+  width: 95%;
+  height: auto;
+  background-color: white;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.iframe-view {
+  width: 100%;
+  height: 500px;
+}
+
+.textshow {
+  display: inline-block;
+  text-align: center;
+}
+.icon3 {
+  height: 120px;
+  width: 120px;
+}
+.datapic:hover .icon3 {
+  height: 140px;
+  width: 140px;
+}
+.datapic:hover {
+  width: 22%;
+  height: 200px;
+  background-color: rgb(191, 238, 234);
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.dataw h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+}
+.data-font {
+  font-size: 30px;
+  display: inline-block;
+  color: gray;
+}

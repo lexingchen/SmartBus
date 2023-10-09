@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/fromcss.css" />
+  <link rel="stylesheet" href="./css/tablecss.css" />
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">园区公交智能调度</a>
+      <a href=""><img src="./img/用户管理.png" alt="" class="hicon" /></a>
+      <a href=""><img src="./img/网站设置.png" alt="" class="hicon" /></a>
+    </header>
+    <div class="sidebar">
+      <a  th:href="@{/index}">
+        <img src="./img/主页.png" class="icon" alt="" />首页</a
+      >
+      <a th:href="@{/showdata}"
+      ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+      >
+      <a class="active" th:href="@{/user}"
+      ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
+      >
+      <a th:href="@{/station}"
+      ><img src="./img//站点地图.png" alt="" class="icon" />站点信息</a
+      >
+      <a th:href="@{/bus}"
+      ><img src="./img/公交.png" alt="" class="icon" />车辆信息</a
+      >
+      <a href="./log.html"
+        ><img src="./img/系统日志-线.png" alt="" class="icon" />系统日志</a
+      >
+      <a href=""><img src="./img/关于.png" alt="" class="icon" />关于</a>
+    </div>
+    <!-- 一行四开始 -->
+    <div class="froms">
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>20</h1>
+          <div class="data-font">在线用户</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/司机排班.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>8</h1>
+          <div class="data-font">在线驾驶员</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/添加用户.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>12</h1>
+          <div class="data-font">新增用户</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/反馈.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>3</h1>
+          <div class="data-font">用户反馈</div>
+        </div>
+      </div>
+    </div>
+    <!-- 一行四结束 -->
+    <!-- 一行一开始 -->
+    <div class="froms">
+      <div class="datapic3">
+        <table>
+          <caption>
+            系统用户管理
+            <a href="#" class="myButton2">增加用户</a>
+          </caption>
+          <!-- S002	52	21	200	26.1154	177.3335	2023-06-22 04:45:55 -->
+          <thead>
+            <tr>
+              <th>uid</th>
+              <th>uname</th>
+              <th>upassword</th>
+              <th>uroal</th>
+              <th>ustate</th>
+              <th>utell</th>
+              <th>operate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>u001</th>
+              <th>星尘</th>
+              <th>123456</th>
+              <th>admin</th>
+              <th>-</th>
+              <th>123456789</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+            <tr>
+              <th>u002</th>
+              <th>张三</th>
+              <th>123456</th>
+              <th>user</th>
+              <th>访问</th>
+              <th>123456789</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+            <tr>
+              <th>u003</th>
+              <th>李四</th>
+              <th>123456</th>
+              <th>driver</th>
+              <th>在线</th>
+              <th>123456789</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+            <tr>
+              <th>u004</th>
+              <th>王五</th>
+              <th>123456</th>
+              <th>driver</th>
+              <th>离线</th>
+              <th>123456789</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">数据总条数：4</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- 一行一结束 -->
+  </body>
+</html>

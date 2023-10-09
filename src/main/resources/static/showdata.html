@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/fromcss.css" />
+  <link rel="stylesheet" href="./css/tablecss.css" />
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">园区公交智能调度</a>
+      <a href=""><img src="./img/用户管理.png" alt="" class="hicon" /></a>
+      <a href=""><img src="./img/网站设置.png" alt="" class="hicon" /></a>
+    </header>
+    <div class="sidebar">
+      <a  th:href="@{/index}">
+        <img src="./img/主页.png" class="icon" alt="" />首页</a
+      >
+      <a class="active" th:href="@{/showdata}"
+      ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+      >
+      <a th:href="@{/user}"
+      ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
+      >
+      <a th:href="@{/station}"
+      ><img src="./img//站点地图.png" alt="" class="icon" />站点信息</a
+      >
+      <a th:href="@{/bus}"
+      ><img src="./img/公交.png" alt="" class="icon" />车辆信息</a
+      >
+      <a href="./log.html"
+        ><img src="./img/系统日志-线.png" alt="" class="icon" />系统日志</a
+      >
+      <a href=""><img src="./img/关于.png" alt="" class="icon" />关于</a>
+    </div>
+    <!-- 一行四开始 -->
+    <div class="froms">
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>38</h1>
+          <div class="data-font">等待人数</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/公交2.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>5/11</h1>
+          <div class="data-font">在线车辆</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/司机排班.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>6/9</h1>
+          <div class="data-font">出车排班</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/16global.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h1>在线</h1>
+          <div class="data-font">环境监测</div>
+        </div>
+      </div>
+    </div>
+    <!-- 一行四结束 -->
+    <!-- 一行一开始 -->
+    <div class="froms">
+      <div class="datapic3">
+        <table>
+          <caption>
+            后端数据流
+          </caption>
+          <!-- S002	52	21	200	26.1154	177.3335	2023-06-22 04:45:55 -->
+          <thead>
+            <tr>
+              <th>devid</th>
+              <th>hum</th>
+              <th>tem</th>
+              <th>rain</th>
+              <th>north</th>
+              <th>east</th>
+              <th>datatime</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="datalist3 :${datalist3}">
+              <th th:text="${datalist3.devid}">S002</th>
+              <th th:text="${datalist3.hum}">52</th>
+              <th th:text="${datalist3.tem}">21</th>
+              <th th:text="${datalist3.rain}">200</th>
+              <th th:text="${datalist3.north}">26.1154</th>
+              <th th:text="${datalist3.east}">177.3335</th>
+              <th th:text="${datalist3.datatime}">2023-06-22 04:45:55</th>
+            </tr>
+
+            <tr>
+              <th>...</th>
+              <th>...</th>
+              <th>...</th>
+              <th>...</th>
+              <th>...</th>
+              <th>...</th>
+              <th>...</th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">数据总条数：4</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- 一行一结束 -->
+  </body>
+</html>

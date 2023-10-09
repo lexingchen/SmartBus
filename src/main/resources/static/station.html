@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/fromcss.css" />
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">园区公交智能调度</a>
+      <a href=""><img src="./img/用户管理.png" alt="" class="hicon" /></a>
+      <a href=""><img src="./img/网站设置.png" alt="" class="hicon" /></a>
+    </header>
+    <div class="sidebar">
+      <a  th:href="@{/index}">
+        <img src="./img/主页.png" class="icon" alt="" />首页</a
+      >
+      <a th:href="@{/showdata}"
+      ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+      >
+      <a th:href="@{/user}"
+      ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
+      >
+      <a class="active" th:href="@{/station}"
+      ><img src="./img//站点地图.png" alt="" class="icon" />站点信息</a
+      >
+      <a th:href="@{/bus}"
+      ><img src="./img/公交.png" alt="" class="icon" />车辆信息</a
+      >
+      <a href="./log.html"
+        ><img src="./img/系统日志-线.png" alt="" class="icon" />系统日志</a
+      >
+      <a href=""><img src="./img/关于.png" alt="" class="icon" />关于</a>
+    </div>
+
+    <!-- 一行四开始 -->
+    <div class="froms">
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h2>等待人数：12</h2>
+          <div class="data-font">南区站点</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h2>等待人数：5</h2>
+          <div class="data-font">图书馆站</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h2>等待人数：6</h2>
+          <div class="data-font">理工一站</div>
+        </div>
+      </div>
+      <div class="datapic">
+        <div class="datap2">
+          <img src="./img/预设人员.png" alt="" class="icon3" />
+        </div>
+        <div class="dataw">
+          <h2>等待人数：15</h2>
+          <div class="data-font">北区站点</div>
+        </div>
+      </div>
+    </div>
+    <!-- 一行四结束 -->
+    <!-- 一行二大开始 -->
+    <div class="froms">
+      <div class="datapic2">
+        <iframe
+          src="http://192.168.139.120"
+          frameborder="0"
+          class="iframe-view"
+          noresize="noresize"
+        ></iframe>
+        <h1 class="textshow">站点监控</h1>
+      </div>
+      <div class="datapic2">
+        <iframe
+          src="./s-map.html"
+          frameborder="0"
+          class="iframe-view"
+          noresize="noresize"
+        ></iframe>
+        <h1 class="textshow">站点地图</h1>
+      </div>
+    </div>
+    <!-- 一行二大结束 -->
+  </body>
+</html>

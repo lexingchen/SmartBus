@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/fromcss.css" />
+<link rel="stylesheet" href="./css/tablecss.css" />
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+<header>
+  <a href="./index.html">园区公交智能调度</a>
+  <a href=""><img src="./img/用户管理.png" alt="" class="hicon" /></a>
+  <a href=""><img src="./img/网站设置.png" alt="" class="hicon" /></a>
+</header>
+<!-- 侧边栏开始  -->
+<div class="sidebar">
+  <a  th:href="@{/index}">
+    <img src="./img/主页.png" class="icon" alt="" />首页</a
+  >
+  <a th:href="@{/showdata}"
+  ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+  >
+  <a th:href="@{/user}"
+  ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
+  >
+  <a th:href="@{/station}"
+  ><img src="./img//站点地图.png" alt="" class="icon" />站点信息</a
+  >
+  <a class="active" th:href="@{/bus}"
+  ><img src="./img/公交.png" alt="" class="icon" />车辆信息</a
+  >
+  <a href="./log.html"
+  ><img src="./img/系统日志-线.png" alt="" class="icon" />系统日志</a
+  >
+  <a href=""><img src="./img/关于.png" alt="" class="icon" />关于</a>
+</div>
+<!-- 侧边栏结束 -->
+<!-- 一行四开始 -->
+<div class="froms">
+  <div class="datapic">
+    <div class="datap2">
+      <img src="./img/公交2.png" alt="" class="icon3" />
+    </div>
+    <div class="dataw">
+      <h1>5/11</h1>
+      <div class="data-font">在线车辆</div>
+    </div>
+  </div>
+  <div class="datapic">
+    <div class="datap2">
+      <img src="./img/运行.png" alt="" class="icon3" />
+    </div>
+    <div class="dataw">
+      <h1>5</h1>
+      <div class="data-font">营运车辆</div>
+    </div>
+  </div>
+  <div class="datapic">
+    <div class="datap2">
+      <img src="./img/车辆故障.png" alt="" class="icon3" />
+    </div>
+    <div class="dataw">
+      <h1>0</h1>
+      <div class="data-font">故障报修</div>
+    </div>
+  </div>
+  <div class="datapic">
+    <div class="datap2">
+      <img src="./img/实时日志.png" alt="" class="icon3" />
+    </div>
+    <div class="dataw">
+      <h1>12</h1>
+      <div class="data-font">驾驶日志</div>
+    </div>
+  </div>
+</div>
+<!-- 一行四结束 -->
+<!-- 一行一开始 -->
+<div class="froms">
+  <div class="datapic3">
+    <table>
+      <caption>
+        系统车辆管理
+        <a href="#" class="myButton2">增加车辆</a>
+      </caption>
+      <!-- S002	52	21	200	26.1154	177.3335	2023-06-22 04:45:55 -->
+      <thead>
+      <tr>
+        <th>bid</th>
+        <th>bnum</th>
+        <th>bbody</th>
+        <th>uroal</th>
+        <th>bstate</th>
+        <th>bcharge</th>
+        <th>operate</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th>b001</th>
+        <th>明院-001A</th>
+        <th>正常</th>
+        <th>16</th>
+        <th>在线</th>
+        <th>60%</th>
+        <th>
+          <a href="#" class="myButton">删除</a>
+          <a href="#" class="myButton2">修改</a>
+        </th>
+      </tr>
+      <tr>
+        <th>b002</th>
+        <th>明院-002B</th>
+        <th>正常</th>
+        <th>20</th>
+        <th>运行</th>
+        <th>90%</th>
+        <th>
+          <a href="#" class="myButton">删除</a>
+          <a href="#" class="myButton2">修改</a>
+        </th>
+      </tr>
+      <tr>
+        <th>b003</th>
+        <th>明院-003A</th>
+        <th>故障</th>
+        <th>16</th>
+        <th>离线</th>
+        <th>20%</th>
+        <th>
+          <a href="#" class="myButton">删除</a>
+          <a href="#" class="myButton2">修改</a>
+        </th>
+      </tr>
+      <tr>
+        <th>b004</th>
+        <th>明院-004A</th>
+        <th>正常</th>
+        <th>12</th>
+        <th>在线</th>
+        <th>100%</th>
+        <th>
+          <a href="#" class="myButton">删除</a>
+          <a href="#" class="myButton2">修改</a>
+        </th>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="7">数据总条数：4</td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+<!-- 一行一结束 -->
+</body>
+</html>
